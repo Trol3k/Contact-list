@@ -1,0 +1,35 @@
+<div class="container" *ngIf="contact">
+    <header>
+        <h2>{{contact.firstName + ' ' + contact.lastName}}</h2>
+    </header>
+
+    <div>
+        <label for="id">ID: </label>
+        <span id="id">{{contact.id}}</span>
+    </div>
+    <div>
+        <label for="email">Email: </label>
+        <span id="email">{{contact.email}}</span>
+    </div>
+    <div>
+        <label for="password">Password: </label>
+        <span id="password">{{contact.password}}</span>
+    </div>
+    <div>
+        <label for="category">Category: </label>
+        <span id="category">{{contact.category}}</span>
+    </div>
+    <div>
+        <label for="subcategory">Subcategory: </label>
+        <span id="subcategory">{{contact.subcategory}}</span>
+    </div>
+    <div>
+        <label for="phoneNumber">Phone number: </label>
+        <span id="phoneNumber">{{contact.phoneNumber}}</span>
+    </div>
+    <div>
+        <label for="birthDate">Date of birth: </label>
+        <span id="birthDate">{{contact.birthDate}}</span>
+    </div>
+    <button (click)="onDelete(contact)">Delete</button>
+</div>

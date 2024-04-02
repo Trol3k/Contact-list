@@ -1,0 +1,39 @@
+<article *ngIf="contact">
+    <header><h2>Edit Contact</h2></header>
+  
+    <form class="container" #form="ngForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="firstName">Email: </label>
+            <input id="firstName" name="firstName" [(ngModel)]="contact.firstName"/>
+        </div>
+        <div>
+            <label for="lastName">Email: </label>
+            <input id="lastName" name="lastName" [(ngModel)]="contact.lastName"/>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input id="email" name="email" [(ngModel)]="contact.email"/>
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input id="password" name="password" [(ngModel)]="contact.password"/>
+        </div>
+        <div>
+            <label for="category">Category: </label>
+            <input id="category" name="category" [(ngModel)]="contact.category"/>
+        </div>
+        <div>
+            <label for="subcategory">Subcategory: </label>
+            <input id="subcategory" name="subcategory" [(ngModel)]="contact.subcategory"/>
+        </div>
+        <div>
+            <label for="phoneNumber">Phone number: </label>
+            <input id="phoneNumber" name="phoneNumber" [(ngModel)]="contact.phoneNumber"/>
+        </div>
+        <div>
+            <label for="birthDate">Date of birth: </label>
+            <input id="birthDate" name="birthDate" [(ngModel)]="contact.birthDate"/>
+        </div>
+  
+    </form>
+  </article>
